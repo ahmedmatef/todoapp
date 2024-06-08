@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --main-color: #023048;
+  --second-color: #febf05;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--main-color);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.btn-cre {
+  background-color: var(--second-color);
+  color: #fff;
+}
+
+.btn-cre:hover {
+  background-color: var(--main-color);
+  border-color: var(--second-color);
+}
+
+.form-control:focus {
+  /* color: var(--bs-body-color); */
+  /* background-color: var(--bs-body-bg); */
+  border-color: var(--second-color);
+  box-shadow: 0 0 0 0.1rem var(--second-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.trash {
+  left: 93%;
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: red;
+  animation: shaking 0.25s infinite;
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
